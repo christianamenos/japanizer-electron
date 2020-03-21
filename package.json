@@ -1,0 +1,44 @@
+{
+    "name": "japanizer",
+    "version": "0.1.0",
+    "description": "Learn Japanese by playing. Find the correct transcription of the Japanese symbols (at this moment only Hiragana) that appear and beat yourself with this little application",
+    "main": "main.js",
+    "scripts": {
+        "postinstall": "install-app-deps",
+        "start": "electron .",
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder"
+    },
+    "author": "Christian Amenós <christian.amenos@gmail.com> (https://christianamenos.com/)",
+    "license": "MIT",
+    "devDependencies": {
+        "electron": "^8.1.1",
+        "electron-builder": "^22.4.1"
+    },
+    "build": {
+        "appId": "com.christianamenos.japanizer",
+        "dmg": {
+            "contents": [{
+                    "x": 110,
+                    "y": 150
+                },
+                {
+                    "x": 240,
+                    "y": 150,
+                    "type": "link",
+                    "path": "/Applications"
+                }
+            ]
+        },
+        "linux": {
+            "target": [
+                "AppImage",
+                "deb"
+            ]
+        },
+        "win": {
+            "target": "NSIS",
+            "icon": "build/icon.ico"
+        }
+    }
+}

@@ -1,0 +1,136 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+#current-score {
+    font-size: 3rem;
+}
+
+#show-syllable {
+    font-size: 8rem;
+}
+
+#solution-chooser {
+    list-style: none;
+    padding: 0
+}
+
+#timmer {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.yellow-btn {
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    margin: 0.5rem;
+    font-size: 2rem;
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+    border: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+    border-radius: 3px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.yellow-btn:hover {
+    background: linear-gradient(to bottom, #f5d78e, #eeb933);
+}
+
+.yellow-btn:active {
+    background: linear-gradient(to bottom, #f5d78e, #eeb933);
+    box-shadow: inset 0 0 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+.green-btn {
+    outline: none;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    margin: 0.5rem;
+    font-size: 2rem;
+    background: linear-gradient(to bottom, #6c6, #396);
+    border: 1px solid;
+    border-color: #393 #393 #161;
+    border-radius: 3px;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.green-btn:hover {
+    background: linear-gradient(to bottom, #65cb65, #329865);
+}
+
+.green-btn:active {
+    background: linear-gradient(to bottom, #65cb65, #329865);
+    box-shadow: inset 0 0 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+.red-btn {
+    outline: none;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    margin: 0.5rem;
+    font-size: 2rem;
+    background: linear-gradient(to bottom, #c66, #933);
+    border: 1px solid;
+    border-color: #933 #933 #611;
+    border-radius: 3px;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.red-btn:hover {
+    background: linear-gradient(to bottom, #cb6565, #984343);
+}
+
+.red-btn:active {
+    background: linear-gradient(to bottom, #cb6565, #984343);
+    box-shadow: inset 0 0 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+#solution-chooser li {
+    max-width: 20rem;
+    margin: 0.5rem auto;
+}
+
+@keyframes blink {
+    0% {
+        color: transparent;
+    }
+    20% {
+        color: #933;
+    }
+    40% {
+        color: transparent;
+    }
+    60% {
+        color: #933;
+    }
+    80% {
+        color: transparent;
+    }
+    100% {
+        color: #933;
+    }
+}
+
+#new-record-message {
+    color: transparent;
+}
+
+.text-blink {
+    animation: blink 1s forwards;
+}
